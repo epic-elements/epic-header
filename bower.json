@@ -5,7 +5,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "iron-fit-behavior": "PolymerElements/iron-fit-behavior#^1.2.5",
-    "app-layout": "PolymerElements/app-layout#^0.10.0"
+    "app-layout": "PolymerElements/app-layout#^0.10.0",
+    "epic-container": "epic-elements/epic-container"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
