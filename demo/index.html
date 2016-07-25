@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+  <head>
+    <title>epic-header demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../epic-header.es6.html">
+<!--     <link rel="import" href="../epic-styles/epic-styles.html"> -->
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+        .demo:first-child {
+            margin-top: 0;
+        }
+        .demo:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+<!--     <style is="custom-style" include="epic-styles"></style> -->
+  </head>
+  <body>
+
+  <div class="vertical-section-container">
+      <h3>Basic epic-header as page title with subtitle</h3>
+      <demo-snippet>
+        <template>
+          <epic-header title>
+           <marked-element> <div heading>{{heading}}</div></marked-element>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>Basic epic-header Demo</h3>
+      <demo-snippet>
+        <template>
+          <epic-header>
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>Level 2 epic-header</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="2">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>Level 3 epic-header</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="3">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>Level 4 epic-header</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="4">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>Level 5 epic-header</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="5">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    
+
+    <div class="vertical-section-container">
+      <h3>epic-header Centered</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="2" center>
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>epic-header Right Justified</h3>
+      <demo-snippet>
+        <template>
+          <epic-header right>
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>Level 5 epic-header disabled</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="6" disable>
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="1">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="2">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="3">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="4">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="5">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="6">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="7">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    
+    <div class="vertical-section-container">
+      <h3>shadow of Text</h3>
+      <demo-snippet>
+        <template>
+          <epic-header text-elevation="8">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+    <div class="vertical-section-container">
+      <h3>shadow of container</h3>
+      <demo-snippet>
+        <template>
+          <epic-header elevation="1">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+          <epic-header elevation="2">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+          <epic-header elevation="3">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+          <epic-header elevation="4">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+          <epic-header elevation="5">
+            <div heading>Enter to Win Zeal Sunglasses</div>
+            <div subheading>This is the intro message.</div>
+          </epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+    
+
+    <div class="vertical-section-container">
+      <h3>epic-header Colors</h3>
+      <demo-snippet>
+        <template>
+          <epic-header level="2" invert color="navy">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="lucky-green">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="poppy">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="marigold">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="eggplant">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="moss">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="robin-egg">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="teal">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="sapphire">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="blood-orange">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="red">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="night">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="rust">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="charcoal">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="steel-grey">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="light-grey">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="aluminum">
+<div heading>Enter to Win Zeal Sunglasses</div>
+    <div subheading>This is the intro message.</div>
+</epic-header>
+<epic-header level="2" invert color="white">
+    <div heading>Enter to Win Zeal Sunglasses</div> 
+    <div subheading>This is the intro message.</div>
+</epic-header>
+        </template>
+      </demo-snippet>
+    </div>
+
+
+
+
+  </body>
+</html>

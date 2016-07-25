@@ -1,0 +1,262 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-material/paper-material.html">
+<link rel="import" href="../paper-styles/shadow.html">
+<link rel="import" href="../epic-styles/epic-styles.html">
+<link rel="import" href="../epic-container/epic-container-styles.html">
+<link rel="import" href="../epic-container/epic-container.html">
+<dom-module id="epic-header">
+    <template strip-whitespace>
+        <style include="epic-styles"></style>
+        <!--     <style include="epic-container-styles"></style> -->
+        <style>
+
+
+            :host {
+                display: block;
+                padding: 0;
+                margin-bottom: var(--epic-baseline);
+            }
+                
+            /*--------------
+                Default Sizes
+             ---------------*/    
+            :host ::content  {
+                @apply(--epic-type-h4); 
+                position: relative;
+                display: block;
+                margin: 0;
+                padding: 0;
+                color: var(--epic-header-text-color, inherit);
+            }
+
+            :host ::content [subheading] {
+                @apply(--epic-type-h5); text-transform: none;
+            }
+
+            :host[level="2"] ::content {
+                @apply(--epic-type-h5); }
+
+            :host[level="2"] ::content [subheading] {
+                @apply(--epic-type-h6); text-transform: none;
+                font-style: normal;
+            }
+
+            :host[level="3"]  ::content, :host[level="4"], :host[level="5"] {
+                @apply(--epic-type-h5); text-transform: none;
+            }
+
+            :host[level="3"] ::content [subheading], :host[level="4"] ::content [subheading], :host[level="5"] ::content [subheading] {
+                @apply(--epic-type-h6); text-transform: none;
+            }
+
+            :host[title] ::content {
+                @apply(--epic-type-h3); }
+
+            :host[title] ::content [subheading] {
+                @apply(--epic-type-h4); margin-top: var(--epic-baseline);
+            }
+
+
+            /*--------------
+                States
+             ---------------*/
+
+             /* Disabled */
+             :host[disable] {
+              opacity: 0.15;
+              cursor:default;
+            }
+
+
+             /*--------------
+                Positioning
+             ---------------*/
+
+             /* Centered */
+                :host[center] {
+                        text-align: center;
+                }
+
+                /* Left */
+                :host[left] {
+                        text-align: left;
+                }
+
+
+                /* Right */
+                :host[right] {
+                        text-align: right;
+                }
+
+
+                /*--------------
+                Text Shadows
+             ---------------*/
+
+
+                :host[text-elevation="0"] {
+                        @apply(--epic-type-shadow-none);
+                }
+
+                :host[text-elevation="1"] {
+                        @apply(--epic-type-shadow-elevation-2dp);
+                }
+
+                :host[text-elevation="2"] {
+                        @apply(--epic-type-shadow-elevation-3dp);
+                }
+                :host[text-elevation="3"] {
+                        @apply(--epic-type-shadow-elevation-4dp);
+                }
+                :host[text-elevation="4"] {
+                        @apply(--epic-type-shadow-elevation-6dp);
+                }
+                :host[text-elevation="5"] {
+                        @apply(--epic-type-shadow-elevation-8dp);
+                }
+                :host[text-elevation="6"] {
+                        @apply(--epic-type-shadow-elevation-12dp);
+                }
+                :host[text-elevation="7"] {
+                        @apply(--epic-type-shadow-elevation-16dp);
+                }
+                :host[text-elevation="8"] {
+                        @apply(--epic-type-shadow-elevation-24dp);
+                }
+
+
+
+            @media (max-width: 480px) {
+                :host ::content [hide-on-mobile] {
+                    display: none;
+                }
+            }
+
+            @media (min-width: 480px) {
+                :host[title] ::content {
+                    @apply(--epic-type-h2);
+                }
+
+                :host ::content, :host ::content {
+                    @apply(--epic-type-h3); }
+
+                :host ::content [subheading] {
+                    @apply(--epic-type-h4); text-transform: none;
+                }
+
+                :host[level="2"] ::content, :host[level="2"] ::content {
+                    @apply(--epic-type-h4); }
+
+                :host[level="2"] ::content [subheading] {
+                    @apply(--epic-type-h5); text-transform: none;
+                }
+
+                :host[level="3"] ::content {
+                    @apply(--epic-type-h5); }
+
+                :host[level="3"] ::content [subheading] {
+                    @apply(--epic-type-h6); text-transform: none;
+                    font-style: normal;
+                }
+            }
+
+            @media (min-width: 960px) {
+                :host, :host ::content {
+                    @apply(--epic-type-h2);
+                }
+
+                :host ::content [subheading] {
+                    @apply(--epic-type-h4); text-transform: none;
+                }
+
+                :host[level="2"] ::content, :host[level="2"] ::content {
+                    @apply(--epic-type-h3); }
+
+                :host[level="2"] ::content [subheading] {
+                    @apply(--epic-type-h5); text-transform: none;
+                }
+
+                :host[level="3"] ::content {
+                    @apply(--epic-type-h4); }
+
+                :host[level="3"] ::content [subheading] {
+                    @apply(--epic-type-h5); text-transform: none;
+                }
+
+                :host[level="4"] ::content {
+                    @apply(--epic-type-h5); }
+
+                :host[level="4"] ::content [subheading] {
+                    @apply(--epic-type-h6); text-transform: none;
+                }
+
+                :host[level="5"] ::content {
+                    @apply(--epic-type-h5); text-transform: none;
+                }
+
+                :host[level="5"] ::content [subheading] {
+                    @apply(--epic-type-h6); font-size: var(--epic-type-down1);
+                    text-transform: none;
+                }
+
+                :host[title] ::content {
+                    @apply(--epic-type-h1); }
+
+                :host[title] ::content [subheading] {
+                    @apply(--epic-type-h3); }
+            }
+        </style>
+        <epic-container id="epicHeaderBox" class="box" animate="[[animateShadow]]" elevation="[[elevation]]" background="[[background]]" color="[[color]]">
+            <content select="[heading]"></content>
+            <content select="[subheading]"></content>
+        </epic-container>
+    </template>
+    <script>
+        (function() {
+            'use strict';
+            class EpicHeader {
+                // Define behaviors with a getter.
+                //     get behaviors() {
+                //     }
+                beforeRegister() {
+                    this.is = 'epic-header';
+                    this.properties = {
+                        animateShadow: {
+                            type: Boolean,
+                            value: false,
+                            notify: true
+                        },
+                        elevation: {
+                            type: Number,
+                            value: 0,
+                            notify: true
+                        },
+                        /** Specifies the style treatment of the background. Use image url or named color choices */
+                        background: {
+                            type: String,
+                            value: 'transparent',
+                            notify: true,
+                            reflectToAttribute: true
+                        },
+                        /** Sets the text color for the container. */
+                        color: {
+                            type: String,
+                            notify: true,
+                            value: '',
+                            reflectToAttribute: true
+                        }
+                    };
+                    this.observers = [];
+                    this.listeners = {};
+                }
+                // Define other lifecycle methods as you need.
+                ready() {}
+                attached() {}
+                detached() {}
+                attributeChanged() {}
+            }
+            // Register the element using Polymer's constructor.
+            Polymer(EpicHeader);
+        })();
+    </script>
+</dom-module>

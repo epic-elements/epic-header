@@ -1,0 +1,103 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-material/paper-material.html">
+<link rel="import" href="../epic-styles/epic-styles.html">
+
+</head><body><dom-module id="epic-header">
+<template strip-whitespace="">
+    <style include="epic-styles">
+
+    /*--------------
+        Mixins
+    ---------------*/
+    :host {
+        box-sizing: border-box;
+        display: block;
+        padding: 0;
+        margin:0;
+        @apply(--epic-header);
+    }
+    :host > .container {
+        box-sizing: border-box;
+        display: block;
+        padding: 0;
+        margin:0;
+        @apply(--epic-header-container);
+    }
+    :host > .container .content,
+    :host > .container .content ::content {
+        @apply(--epic-type-h1);
+        @apply(--epic-header-content);
+    }
+
+    :host > .container .content ::content > [heading] {
+        @apply(--epic-type-h1);
+        margin-bottom: var(--epic-line-height);
+        @apply(--epic-header-heading);
+    }
+
+    :host > .container .content ::content > [subheader] {
+        @apply(--epic-type-h2);
+        @apply(--epic-header-subheading);
+    }
+
+    /*--------------
+        Header Levels
+    ---------------*/
+
+    :host[level="4"] {
+        @apply(--epic-header);
+    }
+
+    :host[level="4"] > .container {
+        @apply(--epic-header-container);
+    }
+    :host[level="4"] > .container .content,
+    :host[level="4"] > .container .content ::content {
+        @apply(--epic-type-h4);
+        @apply(--epic-header-content);
+    }
+
+    :host[level="4"] > .container .content ::content > [heading] {
+        @apply(--epic-type-h4);
+        @apply(--epic-header-heading);
+    }
+
+    :host[level="4"] > .container .content ::content > [subheader] {
+        @apply(--epic-type-h5);
+        @apply(--epic-header-subheading);
+    }
+
+
+    /*---------------------
+        Colors
+    -----------------------*/
+
+    :host[invert] > .container {
+        background-color: var(--epic-color-charcoal);
+        color: white;
+        @apply(--epic-header);
+    }
+
+    /* Disabled */
+    :host[disabled] {
+      opacity: 0.45;
+    }
+
+    /* Disabled */
+    :host[center] {
+      text-align: center;
+    }
+
+
+    </style>
+
+    <paper-material id="container" class="container" elevation="[[elevation]]" animated="[[animated]]">
+        <div id="content" class="content">
+            <content id="lightDom"></content>
+        </div>
+    </paper-material>
+
+</template>
+
+</dom-module>
+<script src="epic-header.js"></script></body></html>
